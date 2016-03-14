@@ -20,9 +20,9 @@ func serve(result http.ResponseWriter, req *http.Request){
 	temp:=template.New("project_html.html")
 
 	s:=student{
-		name : "will",
-		person_age : 20,
-		major : "csci",
+		name : "Cory",
+		person_age : 21,
+		major : "CSCI",
 		standing : "Senior",
 	}
 
