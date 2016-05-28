@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+	<div id = "container">
+	</div>
+	<script type="text/javascript">
+		// Build the list
+		var makeUList = function(){
+			var array = ["Element1","Element2","Element3","Element4"];
+            var list = document.createElement('ul');
+
+			for(var i = 0; i < array.length; i++){
+                var item = document.createElement('li');
+                item.appendChild(document.createTextNode(array[i]));
+                item.addEventListener("click", function(){alert(this.innerHTML);});
+                list.appendChild(item);
+			};
+			return list;
+		};
+		document.getElementById('container').appendChild(makeUList());
+	</script>
+
+</body>
+</html>
